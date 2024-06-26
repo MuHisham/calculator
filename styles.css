@@ -13,3 +13,98 @@
     --brightBlue: #00ADB5;
     --lightGray: #EEEEEE;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    min-width: 240px;
+    width: 40vw;
+}
+
+.title {
+    font-size: 1.4em;
+    color: var(--darkGray);
+}
+
+.computeText {
+    height: 20vh;
+    border: 1px solid var(--brightBlue);
+    margin: 10px 0px;
+    border-radius: 4px;
+
+    font-size: 2.75em;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.subText, .mainText {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.subText {
+    height: 30%;
+    width: 100%;
+    color: gray;
+    font-size: 0.6em;
+}
+.mainText {
+    height: 50%;
+    width: 100%;
+}
+
+.clearBtns, .operations, .thirdRow, .fourthRow, .lastRow  {
+    display: flex;
+    gap: 4px;
+}
+.clearBtns > div {
+    width: 50%;
+    border-radius: 4px;
+}
+
+.operations > div, .thirdRow > div, .fourthRow > div, .lastRow > div {
+    width: 25%;
+    border-radius: 4px;
+}
+
+.clearBtns > div, .operations > div, .thirdRow > div, .fourthRow > div, .lastRow > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    font-size: 1.25em;
+    margin-bottom: 4px;
+    opacity: 0.9;
+}
+
+.thirdRow > div, .fourthRow > div, .one, .two, .three {
+    background-color: var(--mediumGray);
+    color: var(--lightGray);
+}
+
+.clearBtns > div, .operations > div {
+    background-color: var(--darkGray);
+    color: var(--lightGray);
+}
+
+.backspaceIcon {
+    fill: var(--lightGray);
+}
+
+.lastRow > .equal {
+    background: linear-gradient(72.5deg, rgb(0, 175, 255) 27.9%, rgb(0, 224, 254) 84.2%);
+    color: var(--darkGray);
+    font-size: 2em;
+}
+
+.clearBtns > div:hover, .operations > div:hover, .thirdRow > div:hover, .fourthRow > div:hover, .lastRow > div:hover{
+    opacity: 1;
+}
